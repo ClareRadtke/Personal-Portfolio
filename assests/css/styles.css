@@ -7,57 +7,91 @@
 /* Universal styling */
 * {
 
+
 }
 
 /*Header */
 #header {
   border: 2.5px solid red;
-  margin: 50px 0;
+  margin-bottom: 25px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 #pageTitle {
-  align-items: flex-start;
-}
-
-#titleSubtext {
-
+  border: 3px solid olivedrab;
+  margin: 2.5%;
+  text-align: center;
 }
 
 /*Nav bar */
 #navbar {
+  display: flex;
   border: 2.5px solid olivedrab;
-  align-items: flex-end;
-  
+  justify-content: center;
+  margin: 2.5%
 }
 
-div nav li {
-  display: inline;
+#navbar li {
   border: 1px solid rgb(214, 104, 1);
   margin: 0 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Nav bar links */
 div nav li a{
  text-decoration: none;
  color: var(--linkMainColor);
- 
 }
 
 div nav li a:hover {
   color: var(--linkHoverColor);
 }
 
-/*Main section */
-  #main {
-    border: 2.5px solid #e2dd1a;
+
+/* Main */
+  main {
+    border: 2px solid rgb(205, 55, 50);
+  }
+  .mainContent {
+    display: flex;
+    flex-flow: row wrap;
     margin: 25px 0;
   }
 
+  #aboutMeContent {
+    flex: 1 0 25%;
+    border: 2.5px solid rgb(23, 172, 85);
+  }
+
+  #appSection {
+    flex: 1 0 75%;
+    flex-wrap: wrap;
+    border: 3px solid orange;
+  }
+
+  /* Heading in the main */
+  .mainHeadings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2.5px solid purple;
+    margin: 5px 0;
+  }
+  .appContainer {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 0 auto;
+    align-items: center;
+
+  }
+
 /* Application Images */
-  #App1Image {
-    height: 400px;
+  #app1Image {
+    height: 300px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/FluffyCockatoo.jpg");
@@ -65,47 +99,40 @@ div nav li a:hover {
     background-position: center;
   }
 
-  #App2Image {
-    height: 250px;
-    width: 50%;
+  #app2Image {
+    height: 150px;
+    width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/LoneMushroom.jpg");
     background-size: cover;
     background-position: center;
   }
 
-  #App3Image {
-    height: 250px;
-    width: 50%;
+  #app3Image {
+    height: 150px;
+    width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/WaterStonesAndLogs.jpg");
     background-size: cover;
     background-position: center;
   }
 
-  #App4Image {
-    height: 250px;
-    width: 50%;
+  #app4Image {
+    height: 150px;
+    width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/WaterfallAndRocks.jpg");
     background-size: cover;
     background-position: center;
   }
 
-  #App5Image {
-    height: 250px;
-    width: 50%;
+  #app5Image {
+    height: 150px;
+    width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/MossyAlcove.jpg");
     background-size: cover;
     background-position: center;
-  }
-
-
-/* Aside */
-  #aside {
-    border: 2.5px solid purple;
-    margin: 5px 0;
   }
 
 
@@ -125,7 +152,9 @@ div nav li a:hover {
 
 /* Mobile first responsiveness */
 @media screen and (min-width:) {
-
+ /* #navbar li {
+    display: inline;
+  } */
 }
 
 @media screen and (min-width:) {
