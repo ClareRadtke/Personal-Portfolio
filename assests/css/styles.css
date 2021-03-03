@@ -9,7 +9,7 @@
 
 }
 
-/*Styling the header */
+/*Header */
 #header {
   border: 2.5px solid red;
   margin: 50px 0;
@@ -25,7 +25,7 @@
 
 }
 
-/* Styling the nav bar */
+/*Nav bar */
 #navbar {
   border: 2.5px solid olivedrab;
   align-items: flex-end;
@@ -38,7 +38,7 @@ div nav li {
   margin: 0 10px;
 }
 
-/* Styling the links in the nav bar */
+/* Nav bar links */
 div nav li a{
  text-decoration: none;
  color: var(--linkMainColor);
@@ -49,11 +49,13 @@ div nav li a:hover {
   color: var(--linkHoverColor);
 }
 
-/*Styling the main */
+/*Main section */
   #main {
     border: 2.5px solid #e2dd1a;
     margin: 25px 0;
   }
+
+/* Application Images */
   #App1Image {
     height: 400px;
     width: 100%;
@@ -100,14 +102,14 @@ div nav li a:hover {
   }
 
 
-/* Styling the aside */
+/* Aside */
   #aside {
     border: 2.5px solid purple;
     margin: 5px 0;
   }
 
 
-/* Styling the footer */
+/* Footer */
   #contactSection {
     border: 2.5px solid navy;
   }
