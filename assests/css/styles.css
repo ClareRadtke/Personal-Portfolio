@@ -1,8 +1,9 @@
 /*  */
 :root {
   --linkHoverColor: palevioletred;
-  --headFootBackgroundColor: #396e42;
+  --headFootBackgroundColor: #466e4e;
   --headFootTextColor: rgb(250, 250, 250);
+  --appBackgroundColor: rgba(70, 110, 78, 0.7);
 }
 
 /* Universal styling */
@@ -64,69 +65,89 @@ div nav li a:hover {
 
 /* Main */
   main {
-    border: 2px solid rgb(205, 55, 50);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
+
+  .mainHeadings {
+    width: 100%;
+    color: var(--headFootTextColor);
+    background-color: var(--headFootBackgroundColor);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 10px;
+  }
+
   .mainContent {
-    margin: 25px 0;
+    margin: 10px 0;
   }
 
   #aboutMeContent {
-    flex: 1 0 25%;
-    border: 2.5px solid rgb(23, 172, 85);
+    display: flex;
+    width: 100%;
   }
 
-  #aboutMeContent #myAvatar {
-    width: 30%;
+  #myAvatar {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100px;
+    
   }
 
   #aboutMeContent p {
-    width: 70%;
+    align-self: center;
+    width: calc(100% - 150px);
+  
   }
 
   #appSection {
-    flex: 1 0 75%;
-    border: 3px solid orange;
+    width: 100%;
+    color: var(--headFootTextColor);
+    background-color:  rgba(70, 110, 78, 0.2);
   }
 
-  /* Heading in the main */
-  .mainHeadings {
-    align-items: center;
-    border: 2.5px solid purple;
-    margin: 5px 0;
-  }
   .appContainer {
-    flex: 1 0 auto;
-    align-items: center;
+    background-color: var(--appBackgroundColor);
+    margin-left: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .appContainer div {
+    border-top-left-radius: 25px;
+    background-size: cover;
+    background-position: right;
+    width: 320px;
+    margin-left: 15px;
+    margin-bottom: 25px;
   }
 
 /* Application Images */
   #app1Image {
     height: 300px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/FluffyCockatoo.jpg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../images/FluffyCockatoo.jpg");  
   }
 
   #app2Image {
     height: 150px;
-    width: 100%;
-    margin-bottom: 25px;
+    /* width: 100%;
+    margin-bottom: 25px; */
     background-image: url("../images/LoneMushroom.jpg");
-    background-size: cover;
-    background-position: center;
+    /*background-size: cover;
+    background-position: center;*/
   }
 
   #app3Image {
     height: 150px;
-    width: 100%;
-    margin-bottom: 25px;
+    /*width: 100%;
+    margin-bottom: 25px;*/
     background-image: url("../images/WaterStonesAndLogs.jpg");
-    background-size: cover;
-    background-position: center;
+   /* background-size: cover;
+    background-position: center;*/
   }
 
   #app4Image {
