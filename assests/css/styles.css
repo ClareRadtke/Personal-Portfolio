@@ -1,0 +1,131 @@
+/*  */
+:root {
+  --linkMainColor: palevioletred;
+  --linkHoverColor: teal;
+}
+
+/* Universal styling */
+* {
+
+}
+
+/*Styling the header */
+#header {
+  border: 2.5px solid red;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#pageTitle {
+  align-items: flex-start;
+}
+
+#titleSubtext {
+
+}
+
+/* Styling the nav bar */
+#navbar {
+  border: 2.5px solid olivedrab;
+  align-items: flex-end;
+  
+}
+
+div nav li {
+  display: inline;
+  border: 1px solid rgb(214, 104, 1);
+  margin: 0 10px;
+}
+
+/* Styling the links in the nav bar */
+div nav li a{
+ text-decoration: none;
+ color: var(--linkMainColor);
+ 
+}
+
+div nav li a:hover {
+  color: var(--linkHoverColor);
+}
+
+/*Styling the main */
+  #main {
+    border: 2.5px solid #e2dd1a;
+    margin: 25px 0;
+  }
+  #App1Image {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/FluffyCockatoo.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #App2Image {
+    height: 250px;
+    width: 50%;
+    margin-bottom: 25px;
+    background-image: url("../images/LoneMushroom.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #App3Image {
+    height: 250px;
+    width: 50%;
+    margin-bottom: 25px;
+    background-image: url("../images/WaterStonesAndLogs.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #App4Image {
+    height: 250px;
+    width: 50%;
+    margin-bottom: 25px;
+    background-image: url("../images/WaterfallAndRocks.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #App5Image {
+    height: 250px;
+    width: 50%;
+    margin-bottom: 25px;
+    background-image: url("../images/MossyAlcove.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+
+/* Styling the aside */
+  #aside {
+    border: 2.5px solid purple;
+    margin: 5px 0;
+  }
+
+
+/* Styling the footer */
+  #contactSection {
+    border: 2.5px solid navy;
+  }
+
+  .contactInfo a {
+    text-decoration: none;
+    color: var(--linkMainColor);
+  }
+
+  .contactInfo a:hover {
+    color: var(--linkHoverColor);
+  }
+
+/* Mobile first responsiveness */
+@media screen and (min-width:) {
+
+}
+
+@media screen and (min-width:) {
+
+}

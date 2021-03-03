@@ -4,25 +4,31 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Clare's Portfolio</title>
     <link rel="stylesheet" href="./assests/css/reset.css" />
     <link rel="stylesheet" href="./assests/css/styles.css" />
   </head>
   
   <body>
-    <header>
+    <header id="header">
 
-      <div>
+      <div id="pageTitle">
         <h1>Clare Radtke</h1>
-        <h2>Full stack developer (in training)</h2>
+        <h2 id="titleSubtext">Full stack developer (in training)</h2>
       </div>
 
-      <div>
+      <div id="navbar">
         <nav>
           <ul>
-            <li>About me</li>
-            <li>Deployed applications</li>
-            <li>Contact</li>
+            <li>
+              <a href="#aboutMe">About me</a>
+            </li>
+            <li>
+              <a href="#deployedApplications">Deployed applications</a>
+            </li>
+            <li>
+              <a href="#contactSection">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -30,47 +36,61 @@
     </header>
 
     <main>
-      <div>
+      <div id="main">
         <section>
           <p>Currently undergoing a bootcamp to solidify and expand my knowlede of 
             CSS, HTML and JavaScript and venture further into full stack development.</p>
         </section>
+
         <section>
           <div>
             <h4>Application 1</h4>
             <p>Placeholder text for description of application</p>
             <!--to contain background image - set in the stylesheet-->
-            <div></div>
+            <div id="App1Image"></div>
           </div>
-            <h4>Application 1</h4>
+
+          <div>
+            <h4>Application 2</h4>
             <p>Placeholder text for description of application</p>
             <!--to contain background image - set in the stylesheet-->
-            <div></div>
-          <div>
-
+            <div id="App2Image"></div>
           </div>
-            <h4>Application 1</h4>
+
+          <div>
+            <h4>Application 3</h4>
             <p>Placeholder text for description of application</p>
             <!--to contain background image - set in the stylesheet-->
-            <div></div>
-          <div>
+            <div id="App3Image"></div>
+          </div>
 
+          <div>
+            <h4>Application 4</h4>
+            <p>Placeholder text for description of application</p>
+            <!--to contain background image - set in the stylesheet-->
+            <div id="App4Image"></div>
+          </div>
+
+          <div>
+            <h4>Application 5</h4>
+            <p>Placeholder text for description of application</p>
+            <!--to contain background image - set in the stylesheet-->
+            <div id="App5Image"></div>
           </div>
         </section>
         
       </div>
 
-
     </main>
 
     <aside>
 
-      <div>
-        <section>
+      <div id="aside">
+        <section id="aboutMe">
           <h2>About me</h2>
         </section>
 
-        <section>
+        <section id="deployedApplications">
           <h2>Deployed Applications</h2>
         </section>
       </div>
@@ -79,18 +99,26 @@
     
   </body>
 
-  <footer>
+  <footer id="contactSection">
     <div>
-      <section>
+      <section id="contactSectionHeading">
         <h2>Contact</h2>
       </section>
     </div>
 
+    <!-- no follow attribute - look up -->
     <div>
       <ul>
-        <li>Email: clare.radtke@outlook.com</li>
-        <li><a href="https://github.com/ClareRadtke">My GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/clareradtke/">LinkedIn</a></li> 
+        <li class="contactInfo">Email: clare.radtke@outlook.com</li>
+        <li class="contactInfo">
+          <a href="https://github.com/ClareRadtke" target="_blank">My GitHub</a>
+        </li>
+        <li class="contactInfo">
+          <a href="https://www.linkedin.com/in/clareradtke/" target="_blank">LinkedIn</a>
+        </li>
+        <li class="contactInfo">
+          <a href="#" target="_blank">Resume</a>
+        </li>
       </ul>
     </div>
   </footer>
