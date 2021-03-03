@@ -1,50 +1,60 @@
 /*  */
 :root {
-  --linkMainColor: palevioletred;
-  --linkHoverColor: teal;
+  --linkHoverColor: palevioletred;
+  --headFootBackgroundColor: #396e42;
+  --headFootTextColor: rgb(250, 250, 250);
 }
 
 /* Universal styling */
-* {
-
-
-}
 
 /*Header */
 #header {
-  border: 2.5px solid red;
-  margin-bottom: 25px;
   display: flex;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-bottom: 25px;
+  width: 100%;
+  color: var(--headFootTextColor);
+  background-color: var(--headFootBackgroundColor);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 #pageTitle {
-  border: 3px solid olivedrab;
-  margin: 2.5%;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-content: center;
 }
 
 /*Nav bar */
 #navbar {
   display: flex;
-  border: 2.5px solid olivedrab;
   justify-content: center;
-  margin: 2.5%
+  width: 100%;
+  margin: 2.5%;
+}
+#navbar nav {
+  width: 100%;
+
 }
 
 #navbar li {
-  border: 1px solid rgb(214, 104, 1);
-  margin: 0 10px;
-  list-style-type: none;
   margin: 0;
+  list-style-type: none;
   padding: 0;
+  text-align: center;
+  padding: 5px 0;
 }
 
 /* Nav bar links */
 div nav li a{
  text-decoration: none;
- color: var(--linkMainColor);
+ color:  var(--headFootTextColor);
 }
 
 div nav li a:hover {
@@ -55,10 +65,10 @@ div nav li a:hover {
 /* Main */
   main {
     border: 2px solid rgb(205, 55, 50);
+    display: flex;
+    flex-direction: column;
   }
   .mainContent {
-    display: flex;
-    flex-flow: row wrap;
     margin: 25px 0;
   }
 
@@ -67,26 +77,28 @@ div nav li a:hover {
     border: 2.5px solid rgb(23, 172, 85);
   }
 
+  #aboutMeContent #myAvatar {
+    width: 30%;
+  }
+
+  #aboutMeContent p {
+    width: 70%;
+  }
+
   #appSection {
     flex: 1 0 75%;
-    flex-wrap: wrap;
     border: 3px solid orange;
   }
 
   /* Heading in the main */
   .mainHeadings {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     border: 2.5px solid purple;
     margin: 5px 0;
   }
   .appContainer {
-    display: flex;
-    flex-flow: column wrap;
     flex: 1 0 auto;
     align-items: center;
-
   }
 
 /* Application Images */
@@ -138,12 +150,47 @@ div nav li a:hover {
 
 /* Footer */
   #contactSection {
-    border: 2.5px solid navy;
+    display: flex;
+    color: var(--headFootTextColor);
+    background-color: var(--headFootBackgroundColor);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #contactHeading {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #contactHeading h2 {
+    font-size: large;
+  }
+
+  #contactLinks {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .contactInfo {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    list-style-type: none;
+    padding: 5px 0;
   }
 
   .contactInfo a {
     text-decoration: none;
-    color: var(--linkMainColor);
+    color: var(--headFootTextColor);
+    font-size: medium;
   }
 
   .contactInfo a:hover {
