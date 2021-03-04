@@ -6,8 +6,6 @@
   --appBackgroundColor: rgba(70, 110, 78, 0.7);
 }
 
-/* Universal styling */
-
 /*Header */
 #header {
   display: flex;
@@ -17,6 +15,7 @@
   text-align: center;
   margin-bottom: 25px;
   width: 100%;
+  min-width: 280px;
   color: var(--headFootTextColor);
   background-color: var(--headFootBackgroundColor);
   border-bottom-left-radius: 25px;
@@ -39,9 +38,9 @@
   width: 100%;
   margin: 2.5%;
 }
+
 #navbar nav {
   width: 100%;
-
 }
 
 #navbar li {
@@ -70,6 +69,7 @@ div nav li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-width: 280px;
   }
 
   .mainHeadings {
@@ -82,9 +82,11 @@ div nav li a:hover {
   }
 
   .mainContent {
+    display: flex;
     margin: 10px 0;
   }
 
+ /* about me section */ 
   #aboutMeContent {
     display: flex;
     width: 100%;
@@ -95,33 +97,37 @@ div nav li a:hover {
     height: 150px;
     overflow: hidden;
     border-radius: 100px;
-    
   }
 
   #aboutMeContent p {
     align-self: center;
     width: calc(100% - 150px);
-  
   }
 
+/* application display */
   #appSection {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     color: var(--headFootTextColor);
     background-color:  rgba(70, 110, 78, 0.2);
   }
 
   .appContainer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--appBackgroundColor);
     margin-left: 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    margin-bottom: 25px;
   }
 
+/* the divs holding the background img */
   .appContainer div {
     border-top-left-radius: 25px;
     background-size: cover;
     background-position: right;
-    width: 320px;
     margin-left: 15px;
     margin-bottom: 25px;
   }
@@ -129,43 +135,27 @@ div nav li a:hover {
 /* Application Images */
   #app1Image {
     height: 300px;
-    background-image: url("../images/FluffyCockatoo.jpg");  
+    background-image: url("../images/FluffyCockatoo.jpg");   
   }
 
   #app2Image {
     height: 150px;
-    /* width: 100%;
-    margin-bottom: 25px; */
     background-image: url("../images/LoneMushroom.jpg");
-    /*background-size: cover;
-    background-position: center;*/
   }
 
   #app3Image {
     height: 150px;
-    /*width: 100%;
-    margin-bottom: 25px;*/
     background-image: url("../images/WaterStonesAndLogs.jpg");
-   /* background-size: cover;
-    background-position: center;*/
-  }
+   }
 
   #app4Image {
     height: 150px;
-    width: 100%;
-    margin-bottom: 25px;
     background-image: url("../images/WaterfallAndRocks.jpg");
-    background-size: cover;
-    background-position: center;
   }
 
   #app5Image {
     height: 150px;
-    width: 100%;
-    margin-bottom: 25px;
     background-image: url("../images/MossyAlcove.jpg");
-    background-size: cover;
-    background-position: center;
   }
 
 
@@ -180,6 +170,7 @@ div nav li a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-width: 280px;
   }
 
   #contactHeading {
@@ -195,6 +186,8 @@ div nav li a:hover {
   }
 
   #contactLinks {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
@@ -219,12 +212,90 @@ div nav li a:hover {
   }
 
 /* Mobile first responsiveness */
-@media screen and (min-width:) {
- /* #navbar li {
-    display: inline;
-  } */
+@media screen and (min-width: 455px) {
+ /* Header */
+  #pageTitle {
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+
+  #navbar a {
+    font-size: 1.25em;
+  }
+
+  /* App section */
+  #heroApp {
+    max-height: 600px;
+    flex-grow: 2;
+  }
+
+  #secondaryApps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  #secondaryApps .appContainer {
+    width: calc(50% - 10px);
+  }
+
+  /* footer */
+  #contactHeading h2 {
+    font-size: 1.5em;
+  }
+
+  #contactLinks li {
+    font-size: 1.25em;
+  }
+
+  #contactLinks a {
+    font-size: 1.25rem;
+  }
+
 }
 
-@media screen and (min-width:) {
+@media screen and (min-width: 992px) {
+  /* Header */
+  #pageTitle {
+    font-size: 2em;
+    align-content: flex-start;
+    margin: 1em 0 0 1em;
+  }
+
+  #pageTitle h1 {
+    text-align: left;
+  }
+
+  #navbar {
+    text-align: right;
+  }
+  
+  #navbar li {
+    display: inline;
+  }
+
+  #navbar a {
+    font-size: 1.5em;
+  }
+
+  /* Footer */
+  #contactSection {
+    flex: row wrap;
+  }
+
+  #contactHeading h2 {
+    font-size: 2em;
+    text-align: left;
+  }
+
+  #contactLinks {
+    text-align: right;
+  }
+
+  #contactLinks li {
+    display: inline;
+  }
 
 }
