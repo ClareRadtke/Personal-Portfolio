@@ -2,7 +2,7 @@
 A site to show my skills and deployed applications
 
 A portfolio to showcase my skills, continually update and direct potential employers to.
-Essentially and online resume!
+Essentially an online resume!
 
 Requirements for this application:
 
