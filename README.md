@@ -1,6 +1,8 @@
 # Personal-Portfolio
 A site to show my skills and deployed applications
 
+[My Personal Portfolio](https://clareradtke.github.io/Personal-Portfolio/)
+
 A portfolio to showcase my skills, continually update and direct potential employers to.
 Essentially an online resume!
 
