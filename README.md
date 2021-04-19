@@ -1,6 +1,8 @@
 # Personal-Portfolio
 A site to show my skills and deployed applications
 
+[Visit my portfolio](https://github.com/ClareRadtke/Personal-Portfolio)
+
 A portfolio to showcase my skills, continually update and direct potential employers to.
 Essentially an online resume!
 

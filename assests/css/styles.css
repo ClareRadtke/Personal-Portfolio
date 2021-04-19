@@ -84,7 +84,7 @@ div nav li a:hover {
 
   .mainContent {
     display: flex;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
   }
 
  /* about me section */ 
@@ -99,6 +99,8 @@ div nav li a:hover {
     overflow: hidden;
     border-radius: 100px;
     margin-left: 2.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 
   #aboutMeContent p {
@@ -112,10 +114,11 @@ div nav li a:hover {
     flex-direction: column;
     width: 100%;
     color: var(--headFootTextColor);
-    background-color:  rgba(70, 110, 78, 0.2);
+    background-color:  rgba(198 199 197 / 22%);
   }
 
   .appContainer {
+    color: white;
     display: flex;
     flex-direction: column;
     background-color: var(--appBackgroundColor);
@@ -123,6 +126,25 @@ div nav li a:hover {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     margin-bottom: 25px;
+    /* text-decoration: none; */
+  }
+
+  .appContainer h4 {
+    padding: 1em 0;
+  }
+
+  .appContainer p {
+    padding: 0 0 1em;
+  }
+
+  .site-link, .site-link:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .repo-link, .repo-link:visited {
+    color: white;
+    text-decoration: none;
+    padding: 1em 0;
   }
 
 /* the divs holding the background img */
@@ -131,33 +153,33 @@ div nav li a:hover {
     background-size: cover;
     background-position: right;
     margin-left: 15px;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
   }
 
 /* Application Images */
   #app1Image {
-    height: 300px;
-    background-image: url("../images/FluffyCockatoo.jpg");   
+    height: 250px;
+    background-image: url("../images/PasswordGenerator.png");   
   }
 
   #app2Image {
-    height: 150px;
-    background-image: url("../images/LoneMushroom.jpg");
+    height: 200px;
+    background-image: url("../images/QuizTime.png");
   }
 
   #app3Image {
-    height: 150px;
-    background-image: url("../images/WaterStonesAndLogs.jpg");
+    height: 200px;
+    background-image: url("../images/LoneMushroom.jpg");
    }
 
   #app4Image {
-    height: 150px;
-    background-image: url("../images/WaterfallAndRocks.jpg");
+    height: 200px;
+    background-image: url("../images/workDayScheduler.png");
   }
 
   #app5Image {
-    height: 150px;
-    background-image: url("../images/MossyAlcove.jpg");
+    height: 200px;
+    background-image: url("../images/FluffyCockatoo.jpg");
   }
 
 
@@ -238,6 +260,7 @@ div nav li a:hover {
   #heroApp {
     max-height: 600px;
     flex-grow: 2;
+    margin: 25px 5%;
   }
 
   #secondaryApps {
@@ -249,7 +272,8 @@ div nav li a:hover {
   }
 
   #secondaryApps .appContainer {
-    width: calc(50% - 10px);
+    width: calc(40% - 10px);
+    margin: 25px 5%;
   }
 
   /* footer */
@@ -268,6 +292,11 @@ div nav li a:hover {
 }
 
 @media screen and (min-width: 992px) {
+  
+  body {
+    margin: 0 4em;
+  }
+
   /* Header */
   #pageTitle {
     font-size: 2em;
@@ -308,6 +337,17 @@ div nav li a:hover {
 
   #contactLinks li {
     display: inline;
+  }
+
+  /* Application Images */
+  #app1Image {
+    height: 300px;
+    background-image: url("../images/PasswordGeneratorWide.png");   
+  }
+
+  #app4Image {
+    height: 200px;
+    background-image: url("../images/workDaySchedulerWide.png");
   }
 
 }
