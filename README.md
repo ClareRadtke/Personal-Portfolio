@@ -26,5 +26,5 @@ Footer:
 
 
 
-![screenshot of the website](Screenshot1.PNG "Screenshot")
+![screenshot of the website](assets/images/screenshot.png "Screenshot")
 
