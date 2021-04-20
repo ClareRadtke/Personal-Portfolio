@@ -1,14 +1,14 @@
 # Personal-Portfolio
 A site to show my skills and deployed applications
 
-[Visit my portfolio](https://github.com/ClareRadtke/Personal-Portfolio)
+[My Personal Portfolio](https://clareradtke.github.io/Personal-Portfolio/)
 
 A portfolio to showcase my skills, continually update and direct potential employers to.
 Essentially an online resume!
 
 Requirements for this application:
 
-- [x] Responsive layout - begin Mobile first & work up (could be improved)
+- [x] Responsive layout - begin Mobile first & work up
 
 Header: 
 - [x] title
@@ -22,8 +22,9 @@ Main:
   - [x] when clicked the deployed app is loaded in new tab 
 
 Footer:
-- [x] Contact info(no resume added)
+- [x] Contact info
 
 
 
-![screenshot of the website](Screenshot1.PNG?raw=true "Screenshot")
+![screenshot of the website](Screenshot1.PNG "Screenshot")
+
