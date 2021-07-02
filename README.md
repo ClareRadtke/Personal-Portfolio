@@ -10,10 +10,11 @@ Essentially an online resume!
 ## Icon Attributes:
 
 All icons from [freeicons.io](https://freeicons.io)
-Notebook icon by [Raj Dev](https://freeicons.io/profile/714)
-Flowerpot and Food icons by [charlie](https://freeicons.io/profile/740)
-Network icon by [icon king1](https://freeicons.io/profile/3)
-Lock and Password icon by (www.wishforge.games)[https://freeicons.io/profile/2257]
+
+- Notebook icon by [Raj Dev](https://freeicons.io/profile/714)
+- Flowerpot and Food icons by [charlie](https://freeicons.io/profile/740)
+- Network icon by [icon king1](https://freeicons.io/profile/3)
+- Lock and Password icon by (www.wishforge.games)[https://freeicons.io/profile/2257]
 
 ## Requirements for this application:
 
