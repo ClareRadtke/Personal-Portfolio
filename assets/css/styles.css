@@ -1,9 +1,9 @@
-/*  */
 :root {
-  --linkHoverColor: palevioletred;
-  --headFootBackgroundColor: #466e4e;
-  --headFootTextColor: rgb(250, 250, 250);
-  --appBackgroundColor: rgba(70, 110, 78, 0.7);
+  --linkHoverColor: rgb(117, 204, 228);
+  --headFootBackgroundColor: rgb(15, 51, 74);
+  --headFootTextColor: rgb(243, 233, 226);
+  --appBackgroundColor: rgb(237, 223, 212);
+  /* rgb(218, 190, 170); */
 }
 
 /*Header */
@@ -52,193 +52,201 @@
 }
 
 /* Nav bar links */
-div nav li a{
- text-decoration: none;
- color:  var(--headFootTextColor);
- padding: 0 .5em;
+div nav li a {
+  text-decoration: none;
+  color: var(--headFootTextColor);
+  padding: 0 0.5em;
 }
 
 div nav li a:hover {
   color: var(--linkHoverColor);
 }
 
-
 /* Main */
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-width: 280px;
-  }
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 280px;
+}
 
-  .mainHeadings {
-    width: 100%;
-    color: var(--headFootTextColor);
-    background-color: var(--headFootBackgroundColor);
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    padding: 10px;
-  }
+.mainHeadings {
+  width: 100%;
+  color: var(--headFootTextColor);
+  background-color: var(--headFootBackgroundColor);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 10px;
+}
 
-  .mainContent {
-    display: flex;
-    margin: 0 0 10px 0;
-  }
+.mainContent {
+  display: flex;
+  margin: 0 0 10px 0;
+}
 
- /* about me section */ 
-  #aboutMeContent {
-    display: flex;
-    width: 100%;
-  }
+.mainContent h4,
+.mainContent p,
+.mainContent a {
+  color: var(--headFootBackgroundColor);
+}
 
-  #myAvatar {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 100px;
-    margin-left: 2.5em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
+/* about me section */
+#aboutMeContent {
+  display: flex;
+  width: 100%;
+}
 
-  #aboutMeContent p {
-    align-self: center;
-    width: calc(100% - 150px);
-  }
+#myAvatar {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-left: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#aboutMeContent p {
+  align-self: center;
+  width: calc(100% - 150px);
+}
 
 /* application display */
-  #appSection {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: var(--headFootTextColor);
-    background-color:  rgba(198 199 197 / 22%);
-  }
+#appSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--headFootTextColor);
+  /* background-color: var(--headFootTextColor); */
+}
 
-  .appContainer {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--appBackgroundColor);
-    margin-left: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    margin-bottom: 25px;
-    /* text-decoration: none; */
-  }
+.appContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--appBackgroundColor);
+  margin-left: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 25px;
+  /* text-decoration: none; */
+}
 
-  .appContainer h4 {
-    padding: 1em 0;
-  }
+.appContainer h4 {
+  padding: 1em 0;
+}
 
-  .appContainer p {
-    padding: 0 0 1em;
-  }
+.appContainer p {
+  padding: 0 0 1em;
+}
 
-  .site-link, .site-link:visited {
-    color: white;
-    text-decoration: none;
-  }
-  .repo-link, .repo-link:visited {
-    color: white;
-    text-decoration: none;
-    padding: 1em 0;
-  }
+.site-link,
+.site-link:visited {
+  color: var(--headFootBackgroundColor);
+  text-decoration: none;
+}
+.repo-link,
+.repo-link:visited {
+  color: var(--headFootBackgroundColor);
+  text-decoration: none;
+  padding: 1em 0;
+}
 
 /* the divs holding the background img */
-  .appContainer div {
-    border-top-left-radius: 25px;
-    background-size: cover;
-    background-position: right;
-    margin-left: 15px;
-    /* margin-bottom: 25px; */
-  }
+.appContainer div {
+  border-top-left-radius: 25px;
+  background-size: cover;
+  background-position: right;
+  margin-left: 15px;
+  /* margin-bottom: 25px; */
+}
 
 /* Application Images */
-  #app1Image {
-    height: 250px;
-    background-image: url("../images/PasswordGenerator.png");   
-  }
+#app1Image {
+  height: 250px;
+  background-image: url("../images/PasswordGenerator.png");
+}
 
-  #app2Image {
-    height: 200px;
-    background-image: url("../images/QuizTime.png");
-  }
+#app2Image {
+  height: 200px;
+  background-image: url("../images/Notebook.png");
+  background-size: 128px;
+  background-repeat: no-repeat;
+}
 
-  #app3Image {
-    height: 200px;
-    background-image: url("../images/LoneMushroom.jpg");
-   }
+#app3Image {
+  height: 200px;
+  background-image: url("../images/LoneMushroom.jpg");
+}
 
-  #app4Image {
-    height: 200px;
-    background-image: url("../images/workDayScheduler.png");
-  }
+#app4Image {
+  height: 200px;
+  background-image: url("../images/workDayScheduler.png");
+}
 
-  #app5Image {
-    height: 200px;
-    background-image: url("../images/FluffyCockatoo.jpg");
-  }
-
+#app5Image {
+  height: 200px;
+  background-image: url("../images/QuizTime.png");
+}
 
 /* Footer */
-  #contactSection {
-    display: flex;
-    color: var(--headFootTextColor);
-    background-color: var(--headFootBackgroundColor);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-width: 280px;
-  }
+#contactSection {
+  display: flex;
+  color: var(--headFootTextColor);
+  background-color: var(--headFootBackgroundColor);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 280px;
+}
 
-  #contactHeading {
-    display: block;
-    width: 100%;
-    margin-top: 5px;
-    padding: 10px;
-    text-align: center;
-  }
+#contactHeading {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+}
 
-  #contactHeading h2 {
-    font-size: large;
-    margin-left: 1em;
-  }
+#contactHeading h2 {
+  font-size: large;
+  margin-left: 1em;
+}
 
-  #contactLinks {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
+#contactLinks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
 
-  .contactInfo {
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    list-style-type: none;
-    padding: 5px .5em;
-  }
+.contactInfo {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  list-style-type: none;
+  padding: 5px 0.5em;
+}
 
-  .contactInfo a {
-    text-decoration: none;
-    color: var(--headFootTextColor);
-    font-size: medium;
-  }
+.contactInfo a {
+  text-decoration: none;
+  color: var(--headFootTextColor);
+  font-size: medium;
+}
 
-  .contactInfo a:hover {
-    color: var(--linkHoverColor);
-  }
+.contactInfo a:hover {
+  color: var(--linkHoverColor);
+}
 
 /* Mobile first responsiveness */
 @media screen and (min-width: 455px) {
- /* Header */
+  /* Header */
   #pageTitle {
     flex-direction: column;
     font-size: 1.5em;
@@ -253,7 +261,8 @@ div nav li a:hover {
     font-size: 1.5em;
   }
 
-  .appContainer h4, .appContainer p {
+  .appContainer h4,
+  .appContainer p {
     font-size: 1.25em;
   }
 
@@ -288,11 +297,9 @@ div nav li a:hover {
   #contactLinks a {
     font-size: 1.25rem;
   }
-
 }
 
 @media screen and (min-width: 992px) {
-  
   body {
     margin: 0 4em;
   }
@@ -320,7 +327,6 @@ div nav li a:hover {
     font-size: 1.5em;
   }
 
-
   /* Footer */
   #contactSection {
     flex: row wrap;
@@ -342,12 +348,11 @@ div nav li a:hover {
   /* Application Images */
   #app1Image {
     height: 300px;
-    background-image: url("../images/PasswordGeneratorWide.png");   
+    background-image: url("../images/PasswordGeneratorWide.png");
   }
 
   #app4Image {
     height: 200px;
     background-image: url("../images/workDaySchedulerWide.png");
   }
-
 }
