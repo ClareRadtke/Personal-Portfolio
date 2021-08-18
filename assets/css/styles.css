@@ -95,7 +95,9 @@ main {
 /* about me section */
 #aboutMeContent {
   display: flex;
+  flex-flow: column nowrap;
   width: 100%;
+  align-items: center;
 }
 
 #myAvatar {
@@ -108,9 +110,19 @@ main {
   margin-bottom: 2em;
 }
 
+.aboutContent {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 2em;
+}
+
 #aboutMeContent p {
-  align-self: center;
-  width: calc(100% - 150px);
+  /* align-self: center; */
+  width: 100%;
+  text-align: left;
+  font-size: calc(18px + 0.5vw);
 }
 
 /* application display */
@@ -138,7 +150,8 @@ main {
   padding: 1em 0;
 }
 
-.appContainer p {
+.desc {
+  margin: 0 1em;
   padding: 0 0 1em;
 }
 
@@ -151,7 +164,7 @@ main {
 .repo-link:visited {
   color: var(--headFootBackgroundColor);
   text-decoration: none;
-  padding: 1em 0;
+  padding: 1em 2em;
 }
 
 /* the divs holding the background img */
@@ -259,11 +272,21 @@ main {
   /* App section */
   .mainHeadings h2 {
     font-size: 1.5em;
+    color: var(--headFootTextColor);
   }
 
   .appContainer h4,
-  .appContainer p {
+  .appContainer p,
+  #aboutMeContent p {
     font-size: 1.25em;
+  }
+
+  #aboutMeContent {
+    flex-direction: row;
+  }
+
+  .aboutContent {
+    width: calc(100% - 150px);
   }
 
   #heroApp {

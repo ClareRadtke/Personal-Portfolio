@@ -7,14 +7,19 @@ A site to show my skills and deployed applications
 A portfolio to showcase my skills, try out designs and direct potential employers to.
 Essentially an online resume!
 
-## Icon Attributes:
+![Portfolio demo](./assets/images/portfolioDemo.gif)
 
-All icons from [freeicons.io](https://freeicons.io)
+## Icon Attributions:
 
-- Notebook icon by [Raj Dev](https://freeicons.io/profile/714)
-- Flowerpot and Food icons by [charlie](https://freeicons.io/profile/740)
+Icons from [freeicons.io](https://freeicons.io):
+
+- Food icon by [charlie](https://freeicons.io/profile/740)
 - Network icon by [icon king1](https://freeicons.io/profile/3)
-- Lock and Password icon by (www.wishforge.games)[https://freeicons.io/profile/2257]
+
+Icons from [flaticon.com]("https://www.flaticon.com/"):
+
+- Money chart and Blog icons by [Freepik](https://www.freepik.com)
+- Directory icon by [Eucalyp](https://www.flaticon.com/authors/eucalyp)
 
 ## Requirements for this application:
 

@@ -13,7 +13,7 @@
     <header id="header">
       <div id="pageTitle">
         <h1>Clare Radtke</h1>
-        <h2 id="titleSubtext">Full stack developer (in training)</h2>
+        <h2 id="titleSubtext">Full stack developer</h2>
       </div>
 
       <div id="navbar">
@@ -42,8 +42,19 @@
         <div id="myAvatar">
           <img src="assets/images/myAvatar.jpg" alt="My online avatar" height="200">
         </div>
-        <p>Looking for work as a front end developer. Currently undergoing a bootcamp to solidify and expand my knowlede of 
-          CSS, HTML and JavaScript and venture further into full stack development.</p>
+        <div class="aboutContent">
+          <p>I have a background in recruitment administration within the university sector, where I was a  team lead for the last few years. </p>
+          <br>
+          <p>Having managed projects big and small, working closely with hardworking and devoted teams and being commended on my calm, curious nature I feel well equipped to navigate the challenges of my new career. </p>
+          <br>
+          <p>My initial interest in software development stems from my personal life - my partner has been in the industry for over a decade and throughout the years I dabbled in learning what he actually does in his work. </p>
+          <br>
+          <p>Now, after completing a Full Stack Web Development course with Monash Uni and almost one and a half years of self learning prior to that, I understand not only what my partner does but also just how vast and exciting this industry really is.</p>
+          <br>
+          <p>The catalyst for my move into software development was being offered the opportunity to move into an account manager role, this caused me to consider what I wanted from my career and revealed I wanted more than my role could offer. Given the multitude of languages, technologies, projects, industries, challenges and teams I am confident that software engineering has what I am looking for and is what I want to pursue.</p>
+  
+        </div>
+         
       </div>
 
       <div class="mainHeadings" id="deployedApplications">
@@ -52,44 +63,44 @@
 
       <div class="mainContent" id="appSection">
         <div class="appContainer" id="heroApp">
-          <a href="https://clever-waste.herokuapp.com/" target=_blank class="site-link">
-            <h4>Clever Waste</h4>
-            <p>An application to track your food expiry dates and show local food donation centers.<br>A group project built using JS, handlebars, MVC, MySQL, express and Sequqlize.<br>Deployed with Heroku.</p>
+          <a href="https://doll-directory.herokuapp.com/" target=_blank class="site-link">
+            <h4>Doll Directory</h4>
+            <p class="desc">An application for the Doll Customising Community. Aiming to bring all of the different aspects of the hobby together<br>Built using JS, React, GraphQL, Apollo, MongoDB, Mongoose, JWT, Bcrypt, and CSS (modules).<br>Deployed with Heroku.</p>
             <!--to contain background image - set in the stylesheet-->
             <!-- <div id="app1Image"></div>   -->
-            <img src="assets/images/food.png" alt="Vegetables in a box icon">
+            <img src="assets/images/directory(1).png" alt="Icon of a folder containing a directory sheet">
           </a>
-          <a href="https://github.com/ChrisOnions/Project-2" target="_blank" class="repo-link">GitHub Repo</a>
+          <a href="https://github.com/ClareRadtke/dollDir" target="_blank" class="repo-link">GitHub Repo</a>
         </div>
 
         <div id="secondaryApps">
           <div class="appContainer">
-            <a href="https://fathomless-caverns-21283.herokuapp.com/" target="_blank" class="site-link">
+            <a href="https://tech-blog-wk14-2021.herokuapp.com/" target="_blank" class="site-link">
               <!--  -->
-              <h4>Notizen</h4>
-              <p>Keep track of your notes with Notizen,<br>a Heroku deployed app with an Express.js backend.</p>
+              <h4>Tech Blog</h4>
+              <p class="desc">A CMS-style blog site, where you can publish a blog post and comment on other posts as well. <br>This app folows the MVC paradigm in its architectural structure, uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.</p>
               <!--to contain background image - set in the stylesheet-->
               <!-- <div id="app2Image"></div> -->
-              <img src="assets/images/Notebook.png" alt="Notebook icon">
+              <img src="assets/images/blogging.png" alt="Blog icon">
             </a>
-            <a href="https://github.com/ClareRadtke/Notizen" target="_blank" class="repo-link">GitHub Repo</a>
+            <a href="https://github.com/ClareRadtke/Tech-Blog" target="_blank" class="repo-link">GitHub Repo</a>
           </div>
   
           <div class="appContainer">
-            <a href="https://flowerpotpeople.github.io/FlowerPot/" target="_blank" class="site-link">
-              <h4>The FlowerPot</h4>
-              <p>A website to take the growing pains out of learning how to garden. <br> A group project using HTML, CSS and JS</p>
+            <a href="https://clever-waste.herokuapp.com/" target="_blank" class="site-link">
+              <h4>Clever Waste</h4>
+              <p class="desc">An application to track your food expiry dates and show local food donation centers.<br>A group project built using JS, handlebars, MVC, MySQL, express and Sequqlize. Deployed with Heroku.</p>
               <!--to contain background image - set in the stylesheet-->
               <!-- <div id="app3Image"></div>   -->
-              <img src="assets/images/flowerPot.png" alt="Flowerpot icon">
+              <img src="assets/images/food.png" alt="Vegetables in a box icon">
             </a>
-            <a href="https://github.com/FlowerPotPeople/FlowerPot" target="_blank" class="repo-link">GitHub Repo</a>
+            <a href="https://github.com/ChrisOnions/Project-2" target="_blank" class="repo-link">GitHub Repo</a>
           </div>
   
           <div class="appContainer">
             <a href="https://github.com/ClareRadtke/EMS/blob/main/assets/images/walkthrough.gif" target="_blank" class="site-link">
               <h4>EMS</h4>
-              <p>Get your employee information under control using this Employee Management System.<br>A CLI interface to manage employee details using node, inquirer, and MySQL.</p>
+              <p class="desc">Get your employee information under control using this Employee Management System.<br>A CLI interface to manage employee details using node, inquirer, and MySQL.</p>
               <!--to contain background image - set in the stylesheet-->
               <!-- <div id="app4Image"></div> -->
               <img src="assets/images/network-icon.png" alt="Network icon, 3 people and their connection">
@@ -98,14 +109,14 @@
           </div>
   
           <div class="appContainer">
-            <a href="https://clareradtke.github.io/Password-Generator/" target="_blank" class="site-link">
-              <h4>Password Generator</h4>
-              <p>An application that generates random passwords based on criteria selected by the user.</p>
+            <a href="https://budget-tracker-21-19.herokuapp.com/" target="_blank" class="site-link">
+              <h4>Budget Tracker</h4>
+              <p class="desc">A budget tracker that allows you to track your withdrawals and deposits both online and offline. <br> PWA built with JS, Express, MongoDB and Mongoose. Using a Service Worker to support offline mode and IndexedDB to store local data while offline. Deployed with Heroku.</p>
               <!-- to contain background image - set in the stylesheet -->
               <!-- <div id="app5Image"></div> -->
-              <img src="assets/images/Lock-and-password.png" alt="Password shield icon">
+              <img src="assets/images/bar-chart.png" alt="Graph showing money fluctuations">
             </a>
-            <a href="https://github.com/ClareRadtke/Password-Generator" target="_blank" class="repo-link">GitHub Repo</a>
+            <a href="https://github.com/ClareRadtke/Budget-Tracker" target="_blank" class="repo-link">GitHub Repo</a>
           </div>   
         </div>
             
@@ -131,7 +142,7 @@
             <a href="https://www.linkedin.com/in/clareradtke/" target="_blank">LinkedIn</a>
           </li>
           <li class="contactInfo">
-            <a href="./assets/resume/Resume 20.04.2020.pdf" target="_blank">Resume</a>
+            <a href="./assets/resume/Resume.pdf" target="_blank">Resume</a>
           </li>
         </ul>
       </div>
